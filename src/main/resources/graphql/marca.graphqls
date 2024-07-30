@@ -1,0 +1,10 @@
+type Marca {
+  marcaId: ID
+  name: String
+  products:[Producto]
+}
+
+input MarcaInput {
+  name: String
+}
+

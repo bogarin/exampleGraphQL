@@ -1,0 +1,10 @@
+type Query {
+  getAllProductos: [Producto]
+  getProductoByIdMarca(idMarca: ID): MarcaProductoDTO
+  getByIProducto(id: ID): Producto
+  getByIdMarca(id: ID): Marca
+}
+type Mutation {
+  addProducto(productoInput: ProductoInput!): Producto
+  add(marcaInput: MarcaInput!): Marca
+}

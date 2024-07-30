@@ -1,0 +1,17 @@
+type Producto {
+  id: ID
+  name: String
+  prices: String
+  marca: Marca
+}
+
+type MarcaProductoDTO {
+  marca: Marca
+  productos: [Producto]
+}
+
+input ProductoInput {
+  name: String
+  prices: String
+  marcaId: String
+}
